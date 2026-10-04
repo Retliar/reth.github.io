@@ -26,7 +26,6 @@ sections.forEach((section) => {
 
 
 // Mouse light effect
-
 const background = document.querySelector(".background");
 
 document.addEventListener("mousemove", (event) => {
@@ -36,10 +35,15 @@ document.addEventListener("mousemove", (event) => {
 
     background.style.background = `
         radial-gradient(
-            circle 350px at ${x}px ${y}px,
-            rgba(255, 255, 255, 0.055),
+            circle 380px at ${x}px ${y}px,
+            rgba(150, 10, 25, 0.16),
             transparent 70%
         ),
-        #080808
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(120, 5, 20, 0.12),
+            transparent 35%
+        ),
+        #070506
     `;
 });
